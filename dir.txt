@@ -1,2 +1,2 @@
 lib
-program
+programs
