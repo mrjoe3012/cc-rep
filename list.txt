@@ -2,4 +2,5 @@ startup.lua
 programs/pipe.lua
 programs/redirect.lua
 programs/echo.lua
+programs/find.lua
 lib/utils.lua
