@@ -1,0 +1,5 @@
+startup.lua
+programs/pipe.lua
+programs/redirect.lua
+programs/echo.lua
+lib/utils.lua
