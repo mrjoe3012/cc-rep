@@ -1,3 +1,5 @@
+-- standard functions
+
 std = {}
 
 function std.out(...)
@@ -32,6 +34,8 @@ return index
 
 end
 
+--string functions
+
 function string.split(str, char)
 
 arr = {}
@@ -56,3 +60,38 @@ end
 return arr
 
 end
+
+-- stopwatch functions
+
+stopwatch = {}
+local _stopwatch = {}
+
+_stopwatch.ticks = 0
+_stopwatch.stop = false
+
+function stopwatch.start()
+_stopwatch.ticks = 0
+_stopwatch.stop = false
+
+while not _stopwatch.stop do
+
+os.sleep(1/20)
+_stopwatch.ticks = _stopwatch.ticks + 1
+
+end
+
+end
+
+function stopwatch.stop()
+
+_stopwatch.stop = true
+
+end
+
+function stopwatch.get()
+
+return _stopwatch.ticks
+
+end
+
+
